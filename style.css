@@ -1,0 +1,31 @@
+:root {
+  --pr-clr-blue: hsl(215, 51%, 70%);
+  --pr-clr-Cyan: hsl(178, 100%, 50%);
+  --n-bg-main: hsl(217, 54%, 11%);
+  --n-bg-card: hsl(216, 50%, 16%);
+  --n-bg-line: hsl(215, 32%, 27%);
+  --white-color: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--n-bg-main);
+  font-family: "Outfit", sans-serif;
+  min-width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 375px;
+  background-color: var(--n-bg-card);
+  margin-top: 80px;
+  border-radius: 5px;
+  display: grid;
+  gap: 1px;
+  text-align: center;
+}
