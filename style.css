@@ -16,16 +16,93 @@ body {
   font-family: "Outfit", sans-serif;
   min-width: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 1.125rem;
 }
 
 .card {
   width: 375px;
   background-color: var(--n-bg-card);
   margin-top: 80px;
-  border-radius: 5px;
-  display: grid;
-  gap: 1px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+
+img {
+  width: 320px;
+  border-radius: 8px;
+}
+.title {
+  color: var(--white-color);
+  margin-left: -130px;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  font: 600;
+}
+
+.text {
+  color: var(--pr-clr-blue);
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
+.small-flex-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  color: var(--pr-clr-Cyan);
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  color: var(--pr-clr-blue);
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 1.5rem;
+  padding-right: 10px;
+}
+
+span {
+  width: 100%;
+  border: 1px solid var(--n-bg-line);
+  margin: 20px 0;
+}
+
+.card-bottom-Avatar {
+  color: var(--white-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.avatar {
+  border: 1px solid var(--white-color);
+  border-radius: 50%;
+  width: 10%;
+  height: 10%;
+  margin-right: 20px;
+  font-weight: 300;
   text-align: center;
+}
+
+.highlight-avatar {
+  border: none;
+  color: var(--pr-clr-blue);
+  margin-right: 5px;
 }
