@@ -94,9 +94,9 @@ span {
 .avatar {
   border: 1px solid var(--white-color);
   border-radius: 50%;
-  width: 10%;
-  height: 10%;
-  margin-right: 20px;
+  width: 12%;
+  height: 12%;
+  margin-right: 15px;
   font-weight: 300;
   text-align: center;
 }
