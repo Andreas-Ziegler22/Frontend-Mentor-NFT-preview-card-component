@@ -90,7 +90,7 @@ img {
   padding-right: 10px;
 }
 
-span {
+.line {
   width: 100%;
   border: 1px solid var(--n-bg-line);
   margin: 20px 0;
