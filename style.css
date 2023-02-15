@@ -23,7 +23,6 @@ body {
 }
 
 .card {
-  position: relative;
   width: 375px;
   background-color: var(--n-bg-card);
   margin-top: 80px;
@@ -34,10 +33,23 @@ body {
   align-items: center;
   padding: 25px;
 }
+.container-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pr-clr-Cyan);
+  border-radius: 8px;
+  width: 100%;
+  opacity: 1;
+  cursor: pointer;
+}
 
 img {
-  width: 320px;
+  width: 100%;
   border-radius: 8px;
+  opacity: 1;
 }
 .title {
   color: var(--white-color);
@@ -107,16 +119,30 @@ span {
   color: var(--pr-clr-blue);
   margin-right: 5px;
 }
-
+span {
+  border: none;
+}
 /* HOVER section */
 
 .icon-view {
-  width: 100%;
+  width: 60px;
 }
 
 .middle {
   transition: 0.5s ease;
   position: absolute;
+  opacity: 0;
+}
+
+.container-card:hover .middle {
   opacity: 1;
-  top: 160px;
+}
+
+.container-card:hover img {
+  opacity: 0.5;
+}
+
+.cyan:hover {
+  color: var(--pr-clr-Cyan);
+  cursor: pointer;
 }
