@@ -1,92 +1,260 @@
-# Frontend Mentor - NFT preview card component
+# Frontend Mentor - NFT preview card component solution
 
-![Design preview for the NFT preview card component coding challenge](./design/desktop-preview.jpg)
+<!-- This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects.  -->
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### The challenge
 
-## The challenge
-
-Your challenge is to build out this preview card component and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![](./images/screenshot.png)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+- Solution URL: [https://github.com/Andreas-Ziegler22/Frontend-Mentor-NFT-preview-card-component](https://github.com/Andreas-Ziegler22/Frontend-Mentor-NFT-preview-card-component)
+- Live Site URL: [https://andreas-ziegler22.github.io/Frontend-Mentor-NFT-preview-card-component/](https://andreas-ziegler22.github.io/Frontend-Mentor-NFT-preview-card-component/)
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## My process
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### Built with
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
 
-## Building your project
+- Mobile-first workflow
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### What I learned
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+Todo the layout it was easy didn't have any problem to do it
 
-## Deploying your project
+when I finished and started working on the small details I had a small war if :hover
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+see loads of tutorials are nice and helpful
+when you take yourself in to do the job is when you truly learn how to do. 💪
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+To see how you can add code snippets, see below:
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+```html
+<main>
+  <div class="card">
+    <div class="container-card">
+      <img src="./images/image-equilibrium.jpg" alt="" class="cyan" />
+      <div class="middle">
+        <img src="./images/icon-view.svg" alt="" class="icon-view" />
+      </div>
+    </div>
+    <p3 class="title cyan">Equilibrium #3429</p3>
+    <p class="text">Our Equilibrium collection promotes balance and calm.</p>
+    <div class="small-flex-group">
+      <p class="left">
+        <img src="./images/icon-ethereum.svg" alt="" class="icon" />
+        0.041 ETH
+      </p>
+      <p class="right">
+        <img src="./images/icon-clock.svg" alt="" class="icon" />
+        3 days left
+      </p>
+      <span></span>
+      <div class="card-bottom-Avatar">
+        <img src="./images/image-avatar.png" alt="" class="avatar" />
+        <p>
+          <span class="highlight-avatar">Creation of</span
+          ><span class="cyan">Jules Wyvern</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+```
 
-## Create a custom `README.md`
+```css
+.:root {
+  --pr-clr-blue: hsl(215, 51%, 70%);
+  --pr-clr-Cyan: hsl(178, 100%, 50%);
+  --n-bg-main: hsl(217, 54%, 11%);
+  --n-bg-card: hsl(216, 50%, 16%);
+  --n-bg-line: hsl(215, 32%, 27%);
+  --white-color: hsl(0, 0%, 100%);
+}
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+* {
+  box-sizing: border-box;
+}
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+body {
+  background-color: var(--n-bg-main);
+  font-family: "Outfit", sans-serif;
+  min-width: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125rem;
+}
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+.card {
+  width: 375px;
+  background-color: var(--n-bg-card);
+  margin-top: 80px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+.container-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pr-clr-Cyan);
+  border-radius: 8px;
+  width: 100%;
+  opacity: 1;
+  cursor: pointer;
+}
 
-## Submitting your solution
+img {
+  width: 100%;
+  border-radius: 8px;
+  opacity: 1;
+}
+.title {
+  color: var(--white-color);
+  margin-left: -130px;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  font: 600;
+}
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+.text {
+  color: var(--pr-clr-blue);
+  font-weight: 300;
+  font-size: 1.125rem;
+}
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+.small-flex-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
-## Sharing your solution
+.left {
+  color: var(--pr-clr-Cyan);
+  display: flex;
+  align-items: center;
+}
 
-There are multiple places you can share your solution:
+.right {
+  color: var(--pr-clr-blue);
+  display: flex;
+  align-items: center;
+}
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+.icon {
+  width: 1.5rem;
+  padding-right: 10px;
+}
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+span {
+  width: 100%;
+  border: 1px solid var(--n-bg-line);
+  margin: 20px 0;
+}
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+.card-bottom-Avatar {
+  color: var(--white-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
 
-## Got feedback for us?
+.avatar {
+  border: 1px solid var(--white-color);
+  border-radius: 50%;
+  width: 12%;
+  height: 12%;
+  margin-right: 15px;
+  font-weight: 300;
+  text-align: center;
+}
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+.highlight-avatar {
+  border: none;
+  color: var(--pr-clr-blue);
+  margin-right: 5px;
+}
+span {
+  border: none;
+}
+/* HOVER section */
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+.icon-view {
+  width: 60px;
+}
 
-**Have fun building!** 🚀
+.middle {
+  transition: 0.5s ease;
+  position: absolute;
+  opacity: 0;
+}
+
+.container-card:hover .middle {
+  opacity: 1;
+}
+
+.container-card:hover img {
+  opacity: 0.5;
+}
+
+.cyan:hover {
+  color: var(--pr-clr-Cyan);
+  cursor: pointer;
+}
+```
+
+```js
+const proudOfThisFunc = () => {
+  console.log("🎉");
+};
+```
+
+### Continued development
+
+I'm sure that can improve more my HTML and CSS
+
+### Useful resources
+
+- [resource 1](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity) - w3schools.com How To - Image Hover Overlay
+- [ resource 2](https://html-css-js.com/css/generator/box-shadow/) - Box-Shadow CSS Generator my favorite!
+
+## Author
+
+- Website - [Andy](https://github.com/Andreas-Ziegler22)
+- Frontend Mentor
